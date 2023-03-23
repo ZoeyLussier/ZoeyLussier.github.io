@@ -1,0 +1,181 @@
+@font-face {
+	font-family: SCARY;
+	src: url("FONTS/OMORI_GAME.ttf");
+}
+
+@font-face {
+	font-family: NORMAL;
+	src: url("FONTS/OMORI_GAME2.ttf");
+}
+
+body {
+	background-color: black;
+
+}
+
+.key {
+	display: flex;
+	justify-content: right;
+}
+
+.esc {
+	height: 100px;
+	width: auto;
+	top: 0;
+	right: 0;
+}
+
+.audio {
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+	opacity: .3;
+}
+
+/*MELONS*/
+
+.melon1 {
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 35px;
+	z-index: 1;
+	height: 75px;
+	width: auto;
+}
+
+.melon2 {
+	position: absolute;
+	margin-top: 437px;
+	margin-left: 1094px;
+	z-index: 1;
+	height: 75px;
+	width: auto;
+}
+
+.melon3 {
+	position: absolute;
+	margin-top: -134px;
+	margin-left: 583px;
+	z-index: 1;
+	height: 75px;
+	width: auto;
+}
+
+.melon4 {
+	position: absolute;
+	margin-top: 512px;
+	margin-left: 193px;
+	z-index: 1;
+	height: 75px;
+	width: auto;
+}
+
+.melon5 {
+	position: absolute;
+	margin-top: 23px;
+	margin-left: 1432px;
+	z-index: 1;
+	height: 75px;
+	width: auto;
+}
+
+.squish1 {
+	position: absolute;
+	margin-top: 317px;
+	margin-left: -53px;
+	z-index: 1;
+	height: 100px;
+	width: auto;
+}
+
+.squish2 {
+	position: absolute;
+	margin-top: 17px;
+	margin-left: 923px;
+	z-index: 1;
+	height: 100px;
+	width: auto;
+}
+
+.squish3 {
+	position: fixed;
+	margin-top: 459px;
+	margin-left: 1454px;
+	z-index: 1;
+	height: 100px;
+	width: auto;
+}
+
+/*BASIL and OMORI*/
+
+.basilsquish {
+	position: absolute;
+	margin-top: 252px;
+	margin-left: 510px;
+	z-index: 2;
+	height: 100px;
+	width: auto;
+	opacity: 0;
+	animation-name: in;
+	animation-duration: .1s;
+	animation-delay: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.basil {
+	position: absolute;
+	margin-top: 250px;
+	margin-left: 510px;
+	z-index: 3;
+	height: 100px;
+	width: auto;
+	animation-name: out;
+	animation-duration: .1s;
+	animation-delay: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.omori {
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 500px;
+	z-index: 3;
+	height: 115px;
+	width: auto;
+}
+
+@keyframes out {
+	from {opacity: 1}
+	to {opacity: 0}
+}
+
+@keyframes in {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+/*TEXT*/
+
+.text {
+	position: absolute;
+	z-index: 4;
+	margin-top: 450px;
+	margin-left: 400px;
+	padding-left: 10px;
+	padding-bottom: 75px;
+	padding-right: 520px;
+	border-style: solid;
+	border-color: white;
+	background-color: black;
+	color: white;
+	font-family: NORMAL;
+	font-size: 35px;
+	opacity: 0;
+	animation-name: in;
+	animation-duration: .1s;
+	animation-delay: 6s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}

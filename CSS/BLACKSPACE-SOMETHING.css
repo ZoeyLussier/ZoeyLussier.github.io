@@ -1,0 +1,142 @@
+@font-face {
+	font-family: SCARY;
+	src: url("FONTS/OMORI_GAME.ttf");
+}
+
+@font-face {
+	font-family: NORMAL;
+	src: url("FONTS/OMORI_GAME2.ttf");
+}
+
+body {
+	background-color: black;
+
+}
+
+.key {
+	display: flex;
+	justify-content: right;
+}
+
+.esc {
+	height: 100px;
+	width: auto;
+	top: 0;
+	right: 0;
+}
+
+.audio {
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+	opacity: .3;
+}
+
+.bg {
+	position: absolute;
+	margin-left: 25%;
+	height: 600px;
+	width: auto;
+	z-index: 1;
+}
+
+.omori {
+	position: absolute;
+	height: 75px;
+	width: auto;
+	z-index: 2;
+	margin-left: 50%;
+	margin-top: 15%;
+}
+
+.something {
+	position: absolute;
+	height: 125px;
+	width: auto;
+	z-index: 2;
+	margin-left: 50.4%;
+	margin-top: 6%;
+}
+
+/*TEXT*/
+
+.box {
+	display: flex;
+	margin-left: 27%;
+	margin-top: 25%;
+}
+
+.label {
+	position: absolute;
+	z-index: 3;
+	border-style: solid;
+	border-color: white;
+	background-color: black;
+	color: white;
+	font-family: NORMAL;
+	font-size: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	animation-name: liar, sunny;
+	animation-delay: 7s, 15s;
+	animation-duration: .1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.format {
+	display: flex;
+	margin-left: 27%;
+	margin-top: 3.5%;
+}
+
+.liar {
+	position: absolute;
+	z-index: 3;
+	border-style: solid;
+	border-color: white;
+	background-color: black;
+	color: white;
+	font-family: NORMAL;
+	font-size: 35px;
+	padding-left: 10px;
+	padding-right: 75px;
+	padding-bottom: 75px;
+	animation-name: liar;
+	animation-delay: 7s;
+	animation-duration: .1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.sunny {
+	position: absolute;
+	z-index: 3;
+	border-style: solid;
+	border-color: white;
+	background-color: black;
+	color: white;
+	font-family: NORMAL;
+	font-size: 35px;
+	padding-left: 10px;
+	padding-right: 538.5px;
+	padding-bottom: 75px;
+	opacity: 0;
+	animation-name: sunny;
+	animation-delay: 15s;
+	animation-duration: .1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+/*ANIMATION*/
+
+@keyframes liar {
+	from {opacity: 1}
+	to {opacity: 0}
+}
+
+@keyframes sunny {
+	from {opacity: 0}
+	to {opacity: 1}
+}

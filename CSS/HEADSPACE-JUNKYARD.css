@@ -1,0 +1,80 @@
+@font-face {
+	font-family: SCARY;
+	src: url("FONTS/OMORI_GAME.ttf");
+}
+
+@font-face {
+	font-family: NORMAL;
+	src: url("FONTS/OMORI_GAME2.ttf");
+}
+
+body {
+	background-color: #7500ff;
+
+}
+
+.key {
+	display: flex;
+	justify-content: right;
+}
+
+.esc {
+	height: 100px;
+	width: auto;
+	top: 0;
+	right: 0;
+}
+
+.audio {
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+	opacity: .5;
+}
+
+.bg {
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 22.5%;
+	height: 650px;
+	width: auto;
+	z-index: 1;
+}
+
+/*Monsters moved via animations. Wormhole back and forth on X axis, Mixtape back and forth on Y axis*/
+
+.wormhole {
+	position: absolute;
+	z-index: 2;
+	height: 60px;
+	margin-top: 29%;
+	margin-left: 51.5%;
+	animation-name: xaxis;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes xaxis {
+	from {transform: translateX(0px);}
+	50% {transform: translateX(10px);}
+	to {transform: translateX(0px);}
+}
+
+.mixtape {
+	position: absolute;
+	z-index: 2;
+	height: 60px;
+	margin-top: 25%;
+	margin-left: 47.5%;
+	animation-name: yaxis;
+	animation-duration: 1s;
+	animation-delay: -.75s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes yaxis {
+	from {transform: translateY(0px);}
+	50% {transform: translateY(10px);}
+	to {transform: translateY(0px);}
+}

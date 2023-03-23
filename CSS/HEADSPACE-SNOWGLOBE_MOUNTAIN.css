@@ -1,0 +1,79 @@
+@font-face {
+	font-family: SCARY;
+	src: url("FONTS/OMORI_GAME.ttf");
+}
+
+@font-face {
+	font-family: NORMAL;
+	src: url("FONTS/OMORI_GAME2.ttf");
+}
+
+body {
+	background-color: #7500ff;
+
+}
+
+.key {
+	display: flex;
+	justify-content: right;
+}
+
+.esc {
+	height: 100px;
+	width: auto;
+	top: 0;
+	right: 0;
+}
+
+.audio {
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+	opacity: .5;
+}
+
+.bg {
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 26.5%;
+	height: 650px;
+	width: auto;
+	z-index: 1;
+}
+
+/*OPACITY OF .button SET TO ZERO SO IT SEEMS LIKE THE USER IS CLICKING ON A SPECIFIC SPOT OF THE BACKGROUND IMG!!!!!!!!*/
+.button {
+	position: absolute;
+	z-index: 2;
+	margin-top: 7%;
+	margin-left: 45%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	opacity: 0;
+}
+
+.fight {
+	position: absolute;
+	z-index: 3;
+	height: 652px;
+	margin-top: -5%;
+	margin-left: 19.5%;
+	visibility: hidden;
+}
+
+.text {
+	position: absolute;
+	z-index: 4;
+	border-style: solid;
+	border-color: white;
+	background-color: black;
+	font-size: 35px;
+	font-family: NORMAL;
+	color: white;
+	padding-left: 10px;
+	padding-right: 148px;
+	padding-bottom: 35px;
+	margin-top: 17%;
+	margin-left: 32%;
+	visibility: hidden;
+}

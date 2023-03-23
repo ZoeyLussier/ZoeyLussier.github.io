@@ -1,0 +1,93 @@
+@font-face {
+	font-family: SCARY;
+	src: url("FONTS/OMORI_GAME.ttf");
+}
+
+@font-face {
+	font-family: NORMAL;
+	src: url("FONTS/OMORI_GAME2.ttf");
+}
+
+body {
+	background-color: #7500ff;
+
+}
+
+.key {
+	display: flex;
+	justify-content: right;
+}
+
+.esc {
+	height: 100px;
+	width: auto;
+	top: 0;
+	right: 0;
+}
+
+.audio {
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+	opacity: .5;
+}
+
+.bg {
+	position: absolute;
+	margin-top: -5%;
+	margin-left: 22.5%;
+	height: 650px;
+	width: auto;
+	z-index: 1;
+}
+
+.button {
+	position: absolute;
+	z-index: 2;
+	height: 60px;
+	margin-top: 13%;
+	margin-left: 50%;
+}
+
+.text {
+	position: absolute;
+	z-index: 3;
+	font-size: 35px;
+	visibility: hidden;
+	margin-top: 27.75%;
+	margin-left: 23%;
+	padding-left: 10px;
+	padding-right: 258px;
+	padding-bottom: 85px;
+	border-style: solid;
+	border-color: white;
+	background-color: black;
+	color: white;
+	font-family: NORMAL;
+}
+
+.label {
+	position: absolute;
+	z-index: 3;
+	font-size: 35px;
+	visibility: hidden;
+	margin-top: 24.5%;
+	margin-left: 23%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-style: solid;
+	border-color: white;
+	background-color: black;
+	color: white;
+	font-family: NORMAL;
+}
+
+.pic {
+	position: absolute;
+	z-index: 3;
+	font-size: 50px;
+	visibility: hidden;
+	height: 110px;
+	margin-top: 20%;
+	margin-left: 71%;
+}

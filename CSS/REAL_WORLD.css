@@ -1,0 +1,131 @@
+@font-face {
+	font-family: SCARY;
+	src: url("FONTS/OMORI_GAME.ttf");
+}
+
+@font-face {
+	font-family: NORMAL;
+	src: url("FONTS/OMORI_GAME2.ttf");
+}
+
+body {
+	background-color: black;
+
+}
+
+.key {
+	display: flex;
+	justify-content: right;
+}
+
+.esc {
+	position: absolute;
+	height: 100px;
+	width: auto;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.audio {
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+	opacity: .5;
+}
+
+.bg {
+	position: absolute;
+	margin-left: 285px;
+	height: 98%;
+	z-index: 1;
+}
+
+/*MARI and SOMETHING fade in and out/move*/
+
+.mari {
+	position: absolute;
+	z-index: 3;
+	height: 75px;
+	margin-left: 735px;
+	margin-top: 225px;
+	opacity: 0;
+	animation-name:fade1, mari2, fade3;
+	animation-duration: 10s, 10s, 7s;
+	animation-delay: 10s, 42s, 65s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 4, 1, 1;
+}
+
+@keyframes fade1 {
+	from {opacity: 0}
+	25% {opacity: 1}
+	50% {opacity: 0}
+	75% {opacity: 1}
+	to {opacity: 0}
+}
+
+@keyframes fade2 {
+	from {opacity: 1}
+	25% {opacity: 0}
+	50% {opacity: 1}
+	75% {opacity: 0}
+	to {opacity: 1}
+}
+
+@keyframes fade3 {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+@keyframes fade4 {
+	from {opacity: 1}
+	to {opacity: 0}
+}
+
+@keyframes mari2 {
+	from {transform: translateY(0px);}
+	to {transform: translateY(-100px);}
+}
+
+.something {
+	position: absolute;
+	z-index: 4;
+	height: 115px;
+	margin-left: 742px;
+	margin-top: 81px;
+	animation-name:fade2, fade4;
+	animation-duration: 10s, 10s;
+	animation-delay: 10s, 55s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 4.5, 1;
+}
+
+/*Text in box, will come in @ same time as fade3 anim*/
+
+.text {
+	position: absolute;
+	z-index: 4;
+	margin-left: 465px;
+	margin-top: 525px;
+	padding-left: 10px;
+	padding-right: 103px;
+	padding-bottom: 90px;
+	color: white;
+	border-style: solid;
+	border-color: white;
+	background-color: black;
+	font-family: NORMAL;
+	font-size: 35px;
+	opacity: 0;
+	animation-name: text1;
+	animation-delay: 71s;
+	animation-duration: 0.01s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+
+@keyframes text1 {
+	from {opacity: 0}
+	to {opacity: 1}
+}

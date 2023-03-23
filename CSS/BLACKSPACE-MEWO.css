@@ -1,0 +1,90 @@
+@font-face {
+	font-family: SCARY;
+	src: url("FONTS/OMORI_GAME.ttf");
+}
+
+@font-face {
+	font-family: NORMAL;
+	src: url("FONTS/OMORI_GAME2.ttf");
+}
+
+body {
+	background-color: black;
+
+}
+
+.key {
+	display: flex;
+	justify-content: right;
+}
+
+.esc {
+	height: 100px;
+	width: auto;
+	top: 0;
+	right: 0;
+}
+
+.audio {
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+	opacity: .3;
+}
+
+.bg {
+	position: absolute;
+	margin-left: 40%;
+	height: 600px;
+	width: auto;
+	z-index: 1;
+}
+
+.box {
+	display: flex;
+}
+
+.box2 {
+	display: flex;
+	margin-top: -165px;
+}
+
+.waiting {
+	position: sticky;
+	z-index: 4;
+	border: solid;
+	border-color: white;
+	background-color: black;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 35px;
+	margin-top: 545px;
+	margin-left: 540px;
+	font-family: SCARY;
+}
+
+.MEWO {
+	position: sticky;
+	z-index: 4;
+	border: solid;
+	border-color: white;
+	background-color: black;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 35px;
+	margin-left: 540px;
+	font-family: SCARY;
+}
+
+/*OMORI*/
+
+.stand {
+	position: absolute;
+	height: 75px;
+	width: auto;
+	z-index: 3;
+	margin-left: 45.5%;
+	margin-top: 22%;
+}

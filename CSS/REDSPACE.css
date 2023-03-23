@@ -1,0 +1,107 @@
+@font-face {
+	font-family: SCARY;
+	src: url("FONTS/OMORI_GAME.ttf");
+}
+
+@font-face {
+	font-family: NORMAL;
+	src: url("FONTS/OMORI_GAME2.ttf");
+}
+
+body {
+	background-color: black;
+
+}
+
+.key {
+	display: flex;
+	justify-content: right;
+}
+
+.esc {
+	position: absolute;
+	height: 100px;
+	width: auto;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+
+.audio {
+	position: absolute;
+	margin-top: 25px;
+	z-index: 2;
+	opacity: .5;
+}
+
+.bg {
+	position: absolute;
+	margin-top: -345px;
+	margin-left: -395px;
+	z-index: 1;
+}
+
+/*evil OMORI fade in/out and text pops up saying "OMORI will not succumb"*/
+
+.evil {
+	position: absolute;
+	z-index: 2;
+	margin-left: 625px;
+	height: 75%;
+	animation-name: fade;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+	from {opacity: 1}
+	50% {opacity: 0}
+	to {opacity: 1}
+}
+
+.did {
+	position: absolute;
+	z-index: 3;
+	border-style: solid;
+	background-color: black;
+	border-color: white;
+	font-family: NORMAL;
+	font-size: 40px;
+	color: white;
+	padding-left: 10px;
+	padding-right: 300px;
+	padding-bottom: 75px;
+	margin-left: 30%;
+	margin-top: 35%;
+}
+
+.will {
+	position: absolute;
+	z-index: 4;
+	border-style: solid;
+	background-color: black;
+	border-color: white;
+	font-family: SCARY;
+	font-size: 40px;
+	color: white;
+	padding-left: 10px;
+	padding-right: 313px;
+	padding-bottom: 65px;
+	padding-top: 10px;
+	margin-left: 30%;
+	margin-top: 35%;
+	opacity: 0;
+	animation-name: fade2;
+	animation-delay: 10s;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fade2 {
+	from {opacity: 0}
+	15% {opacity: 1}
+	30% {opacity: 1}
+	45% {opacity: 1}
+	60% {opacity: 0}
+	to {opacity: 0}
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<meta charset="UTF-8">
+		<title>SWEETHEART'S CASTLE</title>
+		<link rel="icon" type="image/x-icon" href="CSS/ICONS/HEADSPACE-CASTLE.png">
+  		<link rel="Stylesheet" href="CSS/HEADSPACE-CASTLE.css">
+  		<script src="JS/HEADSPACE-CASTLE.js"></script>
+	</head>
+
+	<body onkeydown="getKeyAndMove(event)">
+	
+		<div class="audio">
+			<audio src="CSS/MUSIC/OST-CASTLE.mp3" controls loop>
+				<p>If you are reading this, it is because your browser does not support the audio element.</p>
+			</audio>
+		</div>
+
+		<div class="key">
+			<a href="HEADSPACE.html">
+				<img class="esc" src="CSS/IMAGES/ITEMS/KEY-ESC.png" alt="escape key">
+			</a>
+		</div>
+
+		<img class="bg" src="CSS/IMAGES/BACKGROUNDS/HEADSPACE-CASTLE.png" alt="a palace garden with a large statue in the middle.">
+
+		<!--SWEETHEART is moved via keys, text changes on click-->
+
+		<img id="sweetheart" class="sweetheart" src="CSS/IMAGES/CHARACTERS/SWEEtHEART.png" alt="a girl dressed entirely in pink">
+
+		<p onclick="TEXT2()" id="text3" class="label">SWEETHEART</p>
+
+		<p onclick="TEXT1()" id="text1" class="text1">FAREWELL, MISERABLE PEONS!</p>   
+
+		<p onclick="TEXT2()" id="text2" class="text2">I'LL LOCK YOU UP IN THE DUNGEON FOREVER!!</p>
+
+	</body>
+
+</html>

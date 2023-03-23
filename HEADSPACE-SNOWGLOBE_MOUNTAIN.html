@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<meta charset="UTF-8">
+		<title>SNOWGLOBE MOUNTAIN</title>
+		<link rel="icon" type="image/x-icon" href="CSS/ICONS/HEADSPACE-SNOWGLOBE_MOUNTAIN.png">
+  		<link rel="Stylesheet" href="CSS/HEADSPACE-SNOWGLOBE_MOUNTAIN.css">
+  		<script src="JS/HEADSPACE-SNOWGLOBE_MOUNTAIN.js"></script>
+	</head>
+
+	<body>
+	
+		<div class="audio">
+			<audio src="CSS/MUSIC/OST-SNOWGLOBE_MOUNTAIN.mp3" controls loop>
+				<p>If you are reading this, it is because your browser does not support the audio element.</p>
+			</audio>
+		</div>
+
+		<div class="key">
+			<a href="HEADSPACE.html">
+				<img class="esc" src="CSS/IMAGES/ITEMS/KEY-ESC.png" alt="escape key">
+			</a>
+		</div>
+
+		<img class="bg" src="CSS/IMAGES/BACKGROUNDS/HEADSPACE-SNOWGLOBE_MOUNTAIN.png" alt="a very tall mountain covered in snow">
+
+		<!--Click on space ex-husband to open a new image of the fight. The fight image will cover all of the bg image. Upon clicking on the new image text will pop up.-->
+
+		<button class="button" onclick="imgopen()">START FIGHT?</button>
+
+		<img onclick="textopen()" class="fight" id="fight" src="CSS/IMAGES/CHARACTERS/SPACEEXHUSBAND-FIGHT.png" alt="a fight scene between space ex husband and Omori and his friends">
+
+		<p class="text" id="text" >SPACE EX-HUSBAND: I feel <br> nothing... I am cold... like ice...</p>
+
+	</body>
+
+</html>
